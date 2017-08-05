@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    
+  </style>
+
+  <title>Highcharts Demo</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<table id="datatable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>網路使用率(%)</th>
+            <th>電腦使用率(%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>新北市</th>
+            <td>82.4</td>
+            <td>79.9</td>
+        </tr>
+        <tr>
+            <th>臺北市</th>
+            <td>85.4</td>
+            <td>84.7</td>
+        </tr>
+        <tr>
+            <th>臺中市</th>
+            <td>82.4</td>
+            <td>80.4</td>
+        </tr>
+        <tr>
+            <th>臺南市</th>
+            <td>74.4</td>
+            <td>72.5</td>
+        </tr>
+        <tr>
+            <th>高雄市</th>
+            <td>77.8</td>
+            <td>75.3</td>
+        </tr>
+        <tr>
+            <th>宜蘭縣</th>
+            <td>78.3</td>
+            <td>75.8</td>
+        </tr>
+        <tr>
+            <th>基隆市</th>
+            <td>83.2</td>
+            <td>80.4</td>
+        </tr>
+        <tr>
+            <th>桃園市</th>
+            <td>84.3</td>
+            <td>83.6</td>
+        </tr>
+        <tr>
+            <th>新竹縣</th>
+            <td>82.3</td>
+            <td>81.4</td>
+        </tr>
+        <tr>
+            <th>新竹市</th>
+            <td>86.1</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <th>苗栗縣</th>
+            <td>76.9</td>
+            <td>74.2</td>
+        </tr>
+        <tr>
+            <th>彰化縣</th>
+            <td>74.1</td>
+            <td>71</td>
+        </tr>
+                <tr>
+            <th>南投縣</th>
+            <td>74.4</td>
+            <td>71.9</td>
+        </tr>
+         <tr>
+            <th>雲林縣</th>
+            <td>71.3</td>
+            <td>68.1</td>
+        </tr>
+       <tr>
+    <th>嘉義縣</th>
+            <td>68.5</td>
+            <td>66.3</td>
+        </tr>
+        <tr>
+    <th>嘉義市</th>
+            <td>81.9</td>
+            <td>81.7</td>
+        </tr>
+        <tr>
+    <th>屏東縣</th>
+            <td>72</td>
+            <td>69.4</td>
+        </tr>
+        <tr>
+    <th>澎湖縣</th>
+            <td>75</td>
+            <td>72.7</td>
+        </tr>
+    <tr>
+            <th>花蓮縣</th>
+            <td>78.1</td>
+            <td>76.3</td>
+        </tr>
+    <tr>
+            <th>臺東縣</th>
+            <td>75.5</td>
+            <td>75</td>
+        </tr>
+    <tr>
+            <th>金門縣</th>
+            <td>77.7</td>
+            <td>74.8</td>
+        </tr>
+    <tr>
+            <th>連江縣</th>
+            <td>83.3</td>
+            <td>81</td>
+        </tr>
+    </tbody>
+</table>
+  
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+    data: {
+        table: 'datatable'
+    },
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: '台灣各縣市數位機會概況'
+    },
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: '百分比(%)'
+        }
+    },
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.name + '</b><br/>' +
+                this.point.y + ' ' + this.point.name.toLowerCase();
+        }
+    }
+});
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+

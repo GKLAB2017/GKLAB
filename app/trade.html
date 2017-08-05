@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    #container {
+	min-width: 310px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+  </style>
+
+  <title>GK LAB</title>
+
+  
+</head>
+
+<body>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container"></div>
+
+<script type='text/javascript'>//<![CDATA[
+
+Highcharts.chart('container', {
+
+    title: {
+        text: '網路使用率趨勢'
+    },
+
+    subtitle: {
+        text: 'GK lab.'
+    },
+
+    yAxis: {
+        title: {
+            text: '網路使用率(%)'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            pointStart: 2004
+        }
+    },
+
+
+
+
+    series: [{
+        name: '新北市',
+        data: [ 63.8  , 67.9  , 70.1  , 70.9  , 72.6  , 71.7  , 74.6  , 77  , 77  , 79.2  , 81.6  , 79.8  , 82.4  ]
+    }, {
+        name: '台北市',
+        data: [ 73.4  , 72.2  , 72.8  , 71.6  , 75.5  , 73  , 77.6  , 80.1  , 78.5  , 80.1  , 85  , 82.6  , 85.4  ]
+    }, {
+        name: '台中市',
+        data: [ 73.8  , 72.5  , 72.8  , 73.3  , 75  , 77.2  , 78  , 73.7  , 74.3  , 76.6 , 79.1  , 81.7  ,82.4]
+    }, {
+        name: '台南市',
+        data:[  62.8  , 64.3  , 63.5  , 67.4  , 70.1  , 66.4  , 72.5  , 66.8  , 68.5  , 77.4  , 75.5  , 74.4  , 74.4  ]
+    }, {
+        name: '高雄市',
+        data: [ 64.2  , 65.3  , 66.9  , 66.3  , 70.4  , 70.5  , 73.9  , 71.3  , 70.3  , 74.8  , 76.8  , 76.6  , 77.8  ]
+    }]
+
+});
+//]]> 
+
+</script>
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+</body>
+
+</html>
+
