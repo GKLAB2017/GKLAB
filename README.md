@@ -4,7 +4,7 @@ To Bridge The Digital Divide
 
 Asia Open Data Hackathon 
 
-Copyright (c) <2017> <GK Lab>
+Copyright (c) <2017>  <GK Lab>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
